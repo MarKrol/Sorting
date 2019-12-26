@@ -44,11 +44,13 @@ public class Sort {
 
         if (!isSortTab()) {
             for (int i = 0; i < datatablesort.length - 1; i++) {
-                for (int k = i + 1; k < datatablesort.length; k++) {
-                    if (datatablesort[i] < datatablesort[k]) {
-                        number = datatablesort[i];
-                        datatablesort[i] = datatablesort[k];
-                        datatablesort[k] = number;
+                if (!isSortTab()) {
+                    for (int k = i + 1; k < datatablesort.length; k++) {
+                        if (datatablesort[i] < datatablesort[k]) {
+                            number = datatablesort[i];
+                            datatablesort[i] = datatablesort[k];
+                            datatablesort[k] = number;
+                        }
                     }
                 }
             }
