@@ -3,7 +3,7 @@ package pl.camp.it.db;
 import java.util.Random;
 
 public class Data {
-    private static final int size = 10;
+    private static final int size = 5;
     private static int[] datatable = new int[size];
     private static boolean emptydatatable = true;
 
@@ -36,6 +36,8 @@ public class Data {
 
     public static void generate(){
         Random random = new Random();
+        //int[] datatable1 = {4, 8, 6,5,2};
+        //Data.datatable = datatable1;
 
         for (int i=0; i<size; i++) {
             Data.datatable[i] = random.nextInt();

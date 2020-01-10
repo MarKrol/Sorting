@@ -52,6 +52,8 @@ public class Sort {
                             datatablesort[k] = number;
                         }
                     }
+                } else {
+                    break;
                 }
             }
             showDataTableAfterSort();
